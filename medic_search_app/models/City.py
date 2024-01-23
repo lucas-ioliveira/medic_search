@@ -8,4 +8,4 @@ class City(models.Model):
     update_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.name - self.state.name  
+        return '{} - {}'.format(self.name, self.state.name)
